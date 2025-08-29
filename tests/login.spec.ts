@@ -21,6 +21,10 @@ test.describe('loginPage validation',  () => {
      console.log('UI Username:', uiUsername);
 
      expect(uiUsername?.trim()).toBe(apiUser.username);
+
+
+     const sessionStorage = await page.context().storageState({ path: 'state.json' });
+     console.log(sessionStorage);
      //expect(await loginPage.verifyLoginInput(testData.username, testData.password)).toEqual(getTag())
  })
 })
