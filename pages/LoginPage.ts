@@ -10,7 +10,7 @@ export class LoginPage {
     constructor(page: Page) {
         this.page = page;
         this.userNameInputField = page.locator('input[placeholder="Email"]');
-        this.passInputField = page.locator('input[placeholder="Password"]');
+        this.passInputField = page.locator('input[formcontrolname="password"]');
         this.loginButton = page.locator('button[type="submit"]');
         this.errorMessage = page.locator('.error-messages');
     }
@@ -25,5 +25,9 @@ export class LoginPage {
         await this.passInputField.click();
         await this.passInputField.fill(password);
         await this.loginButton.click();
+    }
+
+    async verifyErrorMessage() {
+        return this.errorMessage.textContent();
     }
 }

@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11205429-2c93-442e-a13c-ae1bf5f53323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apicall/apicallback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/LoginPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/LoginPage.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/example.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,6 +57,55 @@
       <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="K6ConfigurationType" factoryName="k6" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="data">
+        <K6RunData>
+          <option name="additionalParams" />
+          <option name="dashboard" value="false" />
+          <option name="envs">
+            <map />
+          </option>
+          <option name="nodeJsRef" value="project" />
+          <option name="nodeOptions" value="--experimental-transform-types --experimental-specifier-resolution=node --no-warnings" />
+          <option name="passParentEnvs" value="true" />
+          <option name="pty" value="true" />
+          <option name="script" />
+          <option name="thresholdsAsTests" value="true" />
+          <option name="type" value="local" />
+          <option name="version" value="1" />
+          <option name="workingDir" />
+        </K6RunData>
+      </option>
+      <option name="defaultTargetName" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="workingDirectory" />
+      <option name="additionalParams" />
+      <option name="dashboard" value="false" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="nodeJsRef" value="project" />
+      <option name="nodeOptions" value="--experimental-transform-types --experimental-specifier-resolution=node --no-warnings" />
+      <option name="passParentEnvs" value="true" />
+      <option name="pty" value="true" />
+      <option name="script" />
+      <option name="thresholdsAsTests" value="true" />
+      <option name="type" value="local" />
+      <option name="version" value="1" />
+      <option name="workingDir" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,7 +122,9 @@
       <option name="presentableId" value="Default" />
       <updated>1754022130498</updated>
       <workItem from="1754022131656" duration="7243000" />
-      <workItem from="1754313135568" duration="8453000" />
+      <workItem from="1754313135568" duration="10928000" />
+      <workItem from="1756230524719" duration="869000" />
+      <workItem from="1756308381529" duration="9375000" />
     </task>
     <servers />
   </component>
