@@ -7,8 +7,8 @@ import { readCsv, updateCsv } from "../config/testcase.ts";
 import testData from "../config/data.json";
 import path from "path";
 
-const csvPath = path.resolve(
-    "/Users/muhaiminulislam/WebstormProjects/ts_article/config/datadriven.csv"
+const csvPath = path.resolve( __dirname,
+    "../config/datadriven.csv"
 );
 
 let records: any[] = readCsv(csvPath);

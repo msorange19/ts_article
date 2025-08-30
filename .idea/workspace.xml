@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11205429-2c93-442e-a13c-ae1bf5f53323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/datadriven.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/testcase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +124,7 @@
       <workItem from="1754022131656" duration="7243000" />
       <workItem from="1754313135568" duration="10928000" />
       <workItem from="1756230524719" duration="869000" />
-      <workItem from="1756308381529" duration="16502000" />
+      <workItem from="1756308381529" duration="17702000" />
     </task>
     <servers />
   </component>
