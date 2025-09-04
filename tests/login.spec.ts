@@ -1,22 +1,22 @@
-import { test, expect } from "../config/fixtures";
+import {test, expect} from "../config/fixtures";
 // @ts-ignore
-import { getUserFromApi } from "../apicall/apicallback.js";
+import {getUserFromApi} from "../apicall/apicallback.js";
 // @ts-ignore
-import { readCsv, updateCsv } from "../config/testcase.ts";
+import {readCsv, updateCsv} from "../config/testcase.ts";
 // @ts-ignore
 import testData from "../config/data.json";
 import path from "path";
 
-const csvPath = path.resolve( __dirname,
+const csvPath = path.resolve(__dirname,
     "../config/datadriven.csv"
 );
 
 let records: any[] = readCsv(csvPath);
-
+let invalid_message;
 console.log("Loaded records:", records);
 
 test.describe("loginPage validation", () => {
-    test.beforeEach(async ({ loginPage }) => {
+    test.beforeEach(async ({loginPage}) => {
         await loginPage.navigateToLoginPage();
     });
 
@@ -25,32 +25,63 @@ test.describe("loginPage validation", () => {
             throw new Error("CSV returned no test records!");
         });
     }
+    test.describe("Invalid Username",
+        () => {
+            records.filter(r => r["Test ID"] === "Test_login_01")
+                .forEach((record, index) => {
 
-    records.forEach((record) => {
-        test(`Login Test: ${record["Test Name"]}`, async ({ loginPage, request, page }) => {
-            try {
-                console.log("Running test:", record["Test Name"]);
-                console.log("Expected status:", record["Status"]);
+                    test(`[${index}] ${record["Test Name"]}`, async ({loginPage}) => {
+                        try {
+                            await loginPage.verifyLoginInput(testData.invalid_username, testData.password);
+                            invalid_message = await loginPage.verifyErrorMessage()
+                            expect(invalid_message).toEqual('email or password is invalid')
+                            updateCsv(csvPath, record["Test Name"], "Pass");
+                        } catch (err) {
+                            updateCsv(csvPath, record["Test Name"], "Fail");
+                            throw err;
+                        }
+                    });
+                })
+        })
+    test.describe("Invalid Password",
+        () => {
+            records.filter(r => r["Test ID"] === "Test_login_02")
+                .forEach((record, index) => {
+                    test(`[${index}] ${record["Test Name"]}`, async ({loginPage}) => {
+                        try {
+                            await loginPage.verifyLoginInput(testData.username, testData.invalid_password);
+                            invalid_message = await loginPage.verifyErrorMessage()
+                            console.log(invalid_message)
+                            expect(invalid_message).toEqual('email or password is invalid')
+                            updateCsv(csvPath, record["Test Name"], "Pass");
+                        } catch (err) {
+                            updateCsv(csvPath, record["Test Name"], "Fail");
+                            throw err;
+                        }
+                    });
+                })
+        })
 
-                await loginPage.verifyLoginInput(testData.username, testData.password);
+    test.describe("Valid User", () => {
+        records.filter(r => r["Test ID"] === "Test_login_03")
+            .forEach((record, index) => {
+                test(`[${index}] ${record["Test Name"]}`, async ({loginPage, request, page}) => {
 
-                const apiUser = await getUserFromApi(request);
-                console.log("API Username:", apiUser.username);
+                    try {
+                        await loginPage.verifyLoginInput(testData.username, testData.password);
+                        const apiUser = await getUserFromApi(request);
+                        const uiUsername = await page.textContent(
+                            `.nav-link[href="/profile/${apiUser.username}"]`
+                        );
+                        expect(uiUsername?.trim()).toBe(apiUser.username);
+                        updateCsv(csvPath, record["Test Name"], "Pass");
+                    } catch (err) {
+                        updateCsv(csvPath, record["Test Name"], "Fail");
+                        throw err;
+                    }
 
-                const uiUsername = await page.textContent(
-                    `.nav-link[href="/profile/${apiUser.username}"]`
-                );
-                console.log("UI Username:", uiUsername);
+                })
+            });
+    })
+})
 
-                expect(uiUsername?.trim()).toBe(apiUser.username);
-
-                // ✅ If test passes → update status
-                updateCsv(csvPath, record["Test Name"], "Pass");
-            } catch (err) {
-                // ❌ If test fails → update status
-                updateCsv(csvPath, record["Test Name"], "Fail");
-                throw err; // rethrow to mark Playwright test failed
-            }
-        });
-    });
-});

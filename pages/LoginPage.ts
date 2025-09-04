@@ -12,7 +12,7 @@ export class LoginPage {
         this.userNameInputField = page.locator('input[placeholder="Email"]');
         this.passInputField = page.locator('input[formcontrolname="password"]');
         this.loginButton = page.locator('button[type="submit"]');
-        this.errorMessage = page.locator('.error-messages');
+        this.errorMessage = page.locator('.error-messages li');
     }
 
     async navigateToLoginPage() {
@@ -28,6 +28,8 @@ export class LoginPage {
     }
 
     async verifyErrorMessage() {
-        return this.errorMessage.textContent();
+
+        await this.errorMessage.waitFor({ state: 'visible' });
+        return await this.errorMessage.textContent();
     }
 }
