@@ -15,6 +15,7 @@ let records: any[] = readCsv(csvPath);
 let invalid_message;
 console.log("Loaded records:", records);
 
+test.describe.configure({ mode: "serial" });
 test.describe("loginPage validation", () => {
     test.beforeEach(async ({loginPage}) => {
         await loginPage.navigateToLoginPage();
@@ -27,35 +28,43 @@ test.describe("loginPage validation", () => {
     }
     test.describe("Invalid Username",
         () => {
-            records.filter(r => r["Test ID"] === "Test_login_01")
+            records.filter(r => r["Scenario"] === "invalid_email")
                 .forEach((record, index) => {
 
-                    test(`[${index}] ${record["Test Name"]}`, async ({loginPage}) => {
-                        try {
-                            await loginPage.verifyLoginInput(testData.invalid_username, testData.password);
-                            invalid_message = await loginPage.verifyErrorMessage()
-                            expect(invalid_message).toEqual('email or password is invalid')
-                            updateCsv(csvPath, record["Test Name"], "Pass");
-                        } catch (err) {
-                            updateCsv(csvPath, record["Test Name"], "Fail");
-                            throw err;
-                        }
-                    });
-                })
+                test(`[${index}] ${record["Test_ID"]}`, async ({loginPage}) => {
+
+                    try {
+                        await loginPage.verifyLoginInput(testData.invalid_username, testData.valid_password);
+                        invalid_message = await loginPage.verifyErrorMessage()
+                        expect(invalid_message).toEqual('email or password is invalid')
+                        // @ts-ignore
+                        updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Pass");
+
+                    } catch (err) {
+                        // @ts-ignore
+                        updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Fail");
+                        throw err;
+                    }
+                });
+            })
         })
     test.describe("Invalid Password",
         () => {
-            records.filter(r => r["Test ID"] === "Test_login_02")
+            records.filter(r => r["Scenario"] === "invalid_password")
                 .forEach((record, index) => {
-                    test(`[${index}] ${record["Test Name"]}`, async ({loginPage}) => {
+                    test(`[${index}] ${record["Test_ID"]}`, async ({loginPage}) => {
+                        console.log(Object.keys(records[0] || {}));
+
                         try {
                             await loginPage.verifyLoginInput(testData.username, testData.invalid_password);
                             invalid_message = await loginPage.verifyErrorMessage()
                             console.log(invalid_message)
                             expect(invalid_message).toEqual('email or password is invalid')
-                            updateCsv(csvPath, record["Test Name"], "Pass");
+                            // @ts-ignore
+                            updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Pass");
                         } catch (err) {
-                            updateCsv(csvPath, record["Test Name"], "Fail");
+                            // @ts-ignore
+                            updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Fail");
                             throw err;
                         }
                     });
@@ -63,9 +72,9 @@ test.describe("loginPage validation", () => {
         })
 
     test.describe("Valid User", () => {
-        records.filter(r => r["Test ID"] === "Test_login_03")
+        records.filter(r => r["Scenario"] === "valid email and password")
             .forEach((record, index) => {
-                test(`[${index}] ${record["Test Name"]}`, async ({loginPage, request, page}) => {
+                test(`[${index}] ${record["Test_ID"]} ${record["Scenario"]} `, async ({loginPage, request, page}) => {
 
                     try {
                         await loginPage.verifyLoginInput(testData.username, testData.password);
@@ -74,9 +83,11 @@ test.describe("loginPage validation", () => {
                             `.nav-link[href="/profile/${apiUser.username}"]`
                         );
                         expect(uiUsername?.trim()).toBe(apiUser.username);
-                        updateCsv(csvPath, record["Test Name"], "Pass");
+                        // @ts-ignore
+                        updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Pass");
                     } catch (err) {
-                        updateCsv(csvPath, record["Test Name"], "Fail");
+                        // @ts-ignore
+                        updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Fail");
                         throw err;
                     }
 

@@ -10,11 +10,11 @@ export function readCsv(filePath: string) {
     return parsed.data;
 }
 
-export function updateCsv(filePath: string, testName: string, status: string) {
+export function updateCsv(filePath: string,testID:string,scenario:string,testName: string, status: string) {
     const records: any[] = readCsv(filePath);
 
     const updated = records.map((row) =>
-        row["Test Name"] === testName ? { ...row, Status: status } : row
+        row["Test_ID"] === testID ||row["Test_Name"]===testName ||row["Scenario"]===scenario? { ...row, Status: status } : row
     );
 
     const csv = Papa.unparse(updated);

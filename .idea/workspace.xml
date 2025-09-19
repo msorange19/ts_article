@@ -7,7 +7,7 @@
     <list default="true" id="11205429-2c93-442e-a13c-ae1bf5f53323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/datadriven.csv" beforeDir="false" afterPath="$PROJECT_DIR$/config/datadriven.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/LoginPage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/LoginPage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/testcase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/testcase.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,23 +35,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;k6.free24.notification.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/muhaiminulislam/WebstormProjects/ts_article/config&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Playwright.loginPage validation.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "k6.free24.notification.shown": "true",
+    "last_opened_file_path": "/Users/muhaiminulislam/WebstormProjects/ts_article/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config" />
@@ -61,6 +62,18 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="loginPage validation" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/login.spec.ts" />
+      <test-names>
+        <test-name value="loginPage validation" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="K6ConfigurationType" factoryName="k6" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="data">
@@ -108,6 +121,11 @@
       <option name="workingDir" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Playwright.loginPage validation" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -129,7 +147,8 @@
       <workItem from="1756230524719" duration="869000" />
       <workItem from="1756308381529" duration="24817000" />
       <workItem from="1756919544364" duration="194000" />
-      <workItem from="1756919744233" duration="5197000" />
+      <workItem from="1756919744233" duration="13033000" />
+      <workItem from="1758304975915" duration="5010000" />
     </task>
     <servers />
   </component>
@@ -141,7 +160,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/tests/login.spec.ts</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
