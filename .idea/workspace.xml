@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11205429-2c93-442e-a13c-ae1bf5f53323" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/HomePage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/home.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apicall/apicallback.js" beforeDir="false" afterPath="$PROJECT_DIR$/apicall/apicallback.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/datadriven.csv" beforeDir="false" afterPath="$PROJECT_DIR$/config/datadriven.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/testcase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/testcase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fixtures.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/fixtures.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -35,24 +41,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Playwright.loginPage validation.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "k6.free24.notification.shown": "true",
-    "last_opened_file_path": "/Users/muhaiminulislam/WebstormProjects/ts_article/config",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Playwright.loginPage validation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;k6.free24.notification.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/muhaiminulislam/WebstormProjects/ts_article/config&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config" />
@@ -148,7 +154,20 @@
       <workItem from="1756308381529" duration="24817000" />
       <workItem from="1756919544364" duration="194000" />
       <workItem from="1756919744233" duration="13033000" />
-      <workItem from="1758304975915" duration="5010000" />
+      <workItem from="1758304975915" duration="6231000" />
+      <workItem from="1758355172037" duration="1247000" />
+      <workItem from="1758478683524" duration="1696000" />
+      <workItem from="1758557168118" duration="776000" />
+      <workItem from="1758563657386" duration="1865000" />
+      <workItem from="1758733698460" duration="1679000" />
+      <workItem from="1761978424167" duration="3766000" />
+      <workItem from="1762193879781" duration="322000" />
+      <workItem from="1762278785825" duration="1385000" />
+      <workItem from="1762363522098" duration="671000" />
+      <workItem from="1762445521753" duration="68000" />
+      <workItem from="1762446037994" duration="2249000" />
+      <workItem from="1762452463444" duration="783000" />
+      <workItem from="1762527567265" duration="3546000" />
     </task>
     <servers />
   </component>
@@ -162,6 +181,11 @@
           <url>file://$PROJECT_DIR$/tests/login.spec.ts</url>
           <line>32</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/pages/HomePage.ts</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,4 +1,4 @@
 Test_ID,Scenario,Test_Name,Status
-Test_login_01,invalid_email,VERIFY LOGIN WITH INVALID EMAIL AND VALID PASSWORD,Fail
+Test_login_01,invalid_email,VERIFY LOGIN WITH INVALID EMAIL AND VALID PASSWORD,Pass
 Test_login_02,invalid_password,VERIFY LOGIN WITH VALID EMAIL AND INVALID PASSWORD,Pass
 Test_login_03,valid email and password,VERIFY LOGIN WITH VALID EMAIL AND PASSWORD,Pass

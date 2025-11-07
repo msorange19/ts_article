@@ -1,6 +1,6 @@
 import {test, expect} from "../config/fixtures";
 // @ts-ignore
-import {getUserFromApi} from "../apicall/apicallback.js";
+import {getUserFromApi,tagFinder} from "../apicall/apicallback.js";
 // @ts-ignore
 import {readCsv, updateCsv} from "../config/testcase.ts";
 // @ts-ignore
@@ -34,14 +34,12 @@ test.describe("loginPage validation", () => {
                 test(`[${index}] ${record["Test_ID"]}`, async ({loginPage}) => {
 
                     try {
-                        await loginPage.verifyLoginInput(testData.invalid_username, testData.valid_password);
+                        await loginPage.verifyLoginInput(testData.invalid_username, testData.password);
                         invalid_message = await loginPage.verifyErrorMessage()
                         expect(invalid_message).toEqual('email or password is invalid')
-                        // @ts-ignore
                         updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Pass");
 
                     } catch (err) {
-                        // @ts-ignore
                         updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Fail");
                         throw err;
                     }
@@ -55,15 +53,14 @@ test.describe("loginPage validation", () => {
                     test(`[${index}] ${record["Test_ID"]}`, async ({loginPage}) => {
                         console.log(Object.keys(records[0] || {}));
 
+
                         try {
                             await loginPage.verifyLoginInput(testData.username, testData.invalid_password);
                             invalid_message = await loginPage.verifyErrorMessage()
                             console.log(invalid_message)
                             expect(invalid_message).toEqual('email or password is invalid')
-                            // @ts-ignore
                             updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Pass");
                         } catch (err) {
-                            // @ts-ignore
                             updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Fail");
                             throw err;
                         }
@@ -83,14 +80,15 @@ test.describe("loginPage validation", () => {
                             `.nav-link[href="/profile/${apiUser.username}"]`
                         );
                         expect(uiUsername?.trim()).toBe(apiUser.username);
-                        // @ts-ignore
+                        const tag = await tagFinder(request);
+                        console.log(tag);
                         updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Pass");
                     } catch (err) {
-                        // @ts-ignore
                         updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Fail");
                         throw err;
                     }
-
+                    const sessionStorage = await page.context().storageState({ path: 'state.json' });
+                    console.log(sessionStorage);
                 })
             });
     })
