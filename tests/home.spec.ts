@@ -1,6 +1,6 @@
 import {test, expect} from "../config/fixtures";
 // @ts-ignore
-import {getUserFromApi,tagFinder} from "../apicall/apicallback.js";
+import {favCount, getUserFromApi, tagFinder} from "../apicall/apicallback.js";
 // @ts-ignore
 // @ts-ignore
 import testData from "../config/data.json";
@@ -13,11 +13,14 @@ test.describe("Home", () => {
         await homePage.navigateToHomePage();
     });
     // @ts-ignore
-    test("Home page", async ({homePage,request}) => {
+    test("Home page", async ({homePage,request,page}) => {
         const tag = await tagFinder(request);
-        console.log(tag);
         const feTags = await homePage.verifyTag();
-        console.log("FE tags: ", feTags);
-
+        const feFavCounts = await homePage.verifyFavCount();
+        console.log("FE favCount: ", feFavCounts);
+        const feCount = feFavCounts.map(c => Number(c.trim()));
+        console.log("FE count: ", feCount);
+        const beFavCounts = await favCount(request);
+        expect(feCount).toEqual(beFavCounts);
     })
 })

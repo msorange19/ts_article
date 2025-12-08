@@ -1,5 +1,7 @@
 import testData from '../config/data.json';
-let token =""
+
+let token = ""
+
 export async function getUserFromApi(request) {
     const response = await request.post(`${testData.base_url}/users/login`, {
         data: {
@@ -32,7 +34,24 @@ export async function tagFinder(request) {
         throw new Error(`Tag finder failed: ${response.status()}`);
 
     }
+    const tagValue = await response.json();
+    return tagValue.tags;
+}
 
-    const datatags = await response.json();
-    console.log(datatags);
+
+export async function favCount(request) {
+
+    const response = await request.get(`${testData.base_url}/articles`, {
+
+        headers: {
+            Authorization: `Bearer ${token}`,
+        }
+    })
+    if (!response.ok()) {
+        throw new Error(`favourite count failed: ${response.status()}`);
+
+    }
+    const favValue = await response.json();
+    console.log('count of fav',favValue.articles.map(a => a.favoritesCount));
+    return favValue.articles.map(a => a.favoritesCount)
 }

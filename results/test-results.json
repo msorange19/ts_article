@@ -1,0 +1,347 @@
+{
+  "config": {
+    "configFile": "/Users/muhaiminulislam/WebstormProjects/ts_article/playwright.config.ts",
+    "rootDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "results/html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Auth",
+        "name": "Auth",
+        "testDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*login\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Home Tests",
+        "name": "Home Tests",
+        "testDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*home\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Other Tests",
+        "name": "Other Tests",
+        "testDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.spec\\.ts$/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "loginPage validation",
+          "file": "login.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Invalid Username",
+              "file": "login.spec.ts",
+              "line": 29,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "[0] Test_login_01",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Auth",
+                      "projectName": "Auth",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4757,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-08T18:22:44.696Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/login-loginPage-validation-Invalid-Username-0-Test-login-01-Auth/trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "41d3fd2474a19feb00a1-6b1004b1e3886ee81420",
+                  "file": "login.spec.ts",
+                  "line": 34,
+                  "column": 21
+                }
+              ]
+            },
+            {
+              "title": "Invalid Password",
+              "file": "login.spec.ts",
+              "line": 49,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "[0] Test_login_02",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Auth",
+                      "projectName": "Auth",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4452,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[ \u001b[32m'Test_ID'\u001b[39m, \u001b[32m'Scenario'\u001b[39m, \u001b[32m'Test_Name'\u001b[39m, \u001b[32m'Status'\u001b[39m ]\n"
+                            },
+                            {
+                              "text": "email or password is invalid\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-08T18:22:49.655Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/login-loginPage-validation-Invalid-Password-0-Test-login-02-Auth/trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "41d3fd2474a19feb00a1-0050d62252e6a952372b",
+                  "file": "login.spec.ts",
+                  "line": 53,
+                  "column": 25
+                }
+              ]
+            },
+            {
+              "title": "Valid User",
+              "file": "login.spec.ts",
+              "line": 71,
+              "column": 10,
+              "specs": [
+                {
+                  "title": "[0] Test_login_03 valid email and password ",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Auth",
+                      "projectName": "Auth",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4852,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "[\n  \u001b[32m'Test'\u001b[39m,\n  \u001b[32m'Git'\u001b[39m,\n  \u001b[32m'YouTube'\u001b[39m,\n  \u001b[32m'Blog'\u001b[39m,\n  \u001b[32m'Zoom'\u001b[39m,\n  \u001b[32m'GitHub'\u001b[39m,\n  \u001b[32m'Bondar Academy'\u001b[39m,\n  \u001b[32m'Exam'\u001b[39m,\n  \u001b[32m'Enroll'\u001b[39m,\n  \u001b[32m'Community'\u001b[39m\n]\n"
+                            },
+                            {
+                              "text": "{\n  cookies: [],\n  origins: [\n    {\n      origin: \u001b[32m'https://conduit.bondaracademy.com'\u001b[39m,\n      localStorage: \u001b[36m[Array]\u001b[39m\n    }\n  ]\n}\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-12-08T18:22:54.126Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/login-loginPage-validation-337ff-3-valid-email-and-password--Auth/trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "41d3fd2474a19feb00a1-ff81652b349325f88daa",
+                  "file": "login.spec.ts",
+                  "line": 74,
+                  "column": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "home.spec.ts",
+      "file": "home.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Home",
+          "file": "home.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Home page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Home Tests",
+                  "projectName": "Home Tests",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5576,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "FE favCount:  [\n  \u001b[32m' 991'\u001b[39m, \u001b[32m' 409'\u001b[39m,\n  \u001b[32m' 203'\u001b[39m, \u001b[32m' 85'\u001b[39m,\n  \u001b[32m' 91'\u001b[39m,  \u001b[32m' 65'\u001b[39m,\n  \u001b[32m' 61'\u001b[39m,  \u001b[32m' 59'\u001b[39m,\n  \u001b[32m' 60'\u001b[39m,  \u001b[32m' 65'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "FE count:  [\n  \u001b[33m991\u001b[39m, \u001b[33m409\u001b[39m, \u001b[33m203\u001b[39m, \u001b[33m85\u001b[39m, \u001b[33m91\u001b[39m,\n   \u001b[33m65\u001b[39m,  \u001b[33m61\u001b[39m,  \u001b[33m59\u001b[39m, \u001b[33m60\u001b[39m, \u001b[33m65\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "count of fav [\n  \u001b[33m991\u001b[39m, \u001b[33m409\u001b[39m, \u001b[33m203\u001b[39m, \u001b[33m85\u001b[39m, \u001b[33m91\u001b[39m,\n   \u001b[33m65\u001b[39m,  \u001b[33m61\u001b[39m,  \u001b[33m59\u001b[39m, \u001b[33m60\u001b[39m, \u001b[33m65\u001b[39m\n]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-08T18:22:59.252Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/home-Home-Home-page-Home-Tests/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-cd781d0ed49c1dbc782a",
+              "file": "home.spec.ts",
+              "line": 16,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-08T18:22:44.208Z",
+    "duration": 20734.863999999943,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

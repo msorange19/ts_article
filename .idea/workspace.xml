@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11205429-2c93-442e-a13c-ae1bf5f53323" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/HomePage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/home.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apicall/apicallback.js" beforeDir="false" afterPath="$PROJECT_DIR$/apicall/apicallback.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/datadriven.csv" beforeDir="false" afterPath="$PROJECT_DIR$/config/datadriven.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/fixtures.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/fixtures.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/HomePage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/HomePage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/home.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/home.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +167,14 @@
       <workItem from="1762445521753" duration="68000" />
       <workItem from="1762446037994" duration="2249000" />
       <workItem from="1762452463444" duration="783000" />
-      <workItem from="1762527567265" duration="3546000" />
+      <workItem from="1762527567265" duration="4213000" />
+      <workItem from="1762971710095" duration="5880000" />
+      <workItem from="1763570209997" duration="8031000" />
+      <workItem from="1763730882258" duration="11074000" />
+      <workItem from="1764170094251" duration="755000" />
+      <workItem from="1764176271561" duration="1202000" />
+      <workItem from="1765128109350" duration="3065000" />
+      <workItem from="1765209104573" duration="6841000" />
     </task>
     <servers />
   </component>
@@ -184,8 +191,14 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/pages/HomePage.ts</url>
-          <line>24</line>
+          <line>30</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tests/home.spec.ts</url>
+          <line>15</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -4,7 +4,7 @@ import {getUserFromApi,tagFinder} from "../apicall/apicallback.js";
 // @ts-ignore
 import {readCsv, updateCsv} from "../config/testcase.ts";
 // @ts-ignore
-import testData from "../config/data.json";
+const testData = require("../config/data.json");
 import path from "path";
 
 const csvPath = path.resolve(__dirname,
