@@ -32,11 +32,6 @@ export default defineConfig({
         storageState: 'state.json',
       },
       dependencies: ['Auth'], // 👈 keep dependency order
-    },
-    {
-      name: 'Other Tests',
-      testMatch: /.*\.spec\.ts$/, // all other test files
-      dependencies: ['Auth'], // 👈 also run after Auth if needed
     }
   ],
 });

@@ -9,18 +9,27 @@ import {describe} from "node:test";
 import {request} from "node:http";
 
 test.describe("Home", () => {
+    test.beforeAll(async ({ request }) => {
+        await getUserFromApi(request);   // only once per file
+    });
     test.beforeEach(async ({homePage}) => {
+      //  await getUserFromApi(request);
         await homePage.navigateToHomePage();
     });
     // @ts-ignore
-    test("Home page", async ({homePage,request,page}) => {
+    test(" verify Home page", async ({homePage,request,page}) => {
         const tag = await tagFinder(request);
         const feTags = await homePage.verifyTag();
+        expect(tag).toEqual(feTags);
+
+    })
+    test("Verify Tag Favourite count", async ({homePage,request,page}) => {
         const feFavCounts = await homePage.verifyFavCount();
-        console.log("FE favCount: ", feFavCounts);
+        console.log('feFavCounts',feFavCounts);
         const feCount = feFavCounts.map(c => Number(c.trim()));
-        console.log("FE count: ", feCount);
+        console.log('fecount ', feCount);
         const beFavCounts = await favCount(request);
+        console.log('beFavCounts',beFavCounts);
         expect(feCount).toEqual(beFavCounts);
     })
 })

@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -39,7 +39,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "Auth",
         "name": "Auth",
@@ -55,7 +55,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 2
         },
         "id": "Home Tests",
         "name": "Home Tests",
@@ -63,22 +63,6 @@
         "testIgnore": [],
         "testMatch": [
           "/.*home\\.spec\\.ts/"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 1
-        },
-        "id": "Other Tests",
-        "name": "Other Tests",
-        "testDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "/.*\\.spec\\.ts$/"
         ],
         "timeout": 30000
       }
@@ -124,23 +108,17 @@
                       "projectName": "Auth",
                       "results": [
                         {
-                          "workerIndex": 2,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4757,
+                          "duration": 4412,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-08T18:22:44.696Z",
+                          "startTime": "2025-12-09T17:17:53.712Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/login-loginPage-validation-Invalid-Username-0-Test-login-01-Auth/trace.zip"
-                            }
-                          ]
+                          "attachments": []
                         }
                       ],
                       "status": "expected"
@@ -172,10 +150,10 @@
                       "projectName": "Auth",
                       "results": [
                         {
-                          "workerIndex": 2,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4452,
+                          "duration": 4636,
                           "errors": [],
                           "stdout": [
                             {
@@ -187,15 +165,9 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-08T18:22:49.655Z",
+                          "startTime": "2025-12-09T17:17:58.193Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/login-loginPage-validation-Invalid-Password-0-Test-login-02-Auth/trace.zip"
-                            }
-                          ]
+                          "attachments": []
                         }
                       ],
                       "status": "expected"
@@ -227,12 +199,15 @@
                       "projectName": "Auth",
                       "results": [
                         {
-                          "workerIndex": 2,
+                          "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4852,
+                          "duration": 5557,
                           "errors": [],
                           "stdout": [
+                            {
+                              "text": "BE tags from API [\n  \u001b[32m'Test'\u001b[39m,\n  \u001b[32m'Git'\u001b[39m,\n  \u001b[32m'YouTube'\u001b[39m,\n  \u001b[32m'Blog'\u001b[39m,\n  \u001b[32m'Zoom'\u001b[39m,\n  \u001b[32m'GitHub'\u001b[39m,\n  \u001b[32m'Bondar Academy'\u001b[39m,\n  \u001b[32m'Exam'\u001b[39m,\n  \u001b[32m'Enroll'\u001b[39m,\n  \u001b[32m'Community'\u001b[39m\n]\n"
+                            },
                             {
                               "text": "[\n  \u001b[32m'Test'\u001b[39m,\n  \u001b[32m'Git'\u001b[39m,\n  \u001b[32m'YouTube'\u001b[39m,\n  \u001b[32m'Blog'\u001b[39m,\n  \u001b[32m'Zoom'\u001b[39m,\n  \u001b[32m'GitHub'\u001b[39m,\n  \u001b[32m'Bondar Academy'\u001b[39m,\n  \u001b[32m'Exam'\u001b[39m,\n  \u001b[32m'Enroll'\u001b[39m,\n  \u001b[32m'Community'\u001b[39m\n]\n"
                             },
@@ -242,15 +217,9 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2025-12-08T18:22:54.126Z",
+                          "startTime": "2025-12-09T17:18:02.834Z",
                           "annotations": [],
-                          "attachments": [
-                            {
-                              "name": "trace",
-                              "contentType": "application/zip",
-                              "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/login-loginPage-validation-337ff-3-valid-email-and-password--Auth/trace.zip"
-                            }
-                          ]
+                          "attachments": []
                         }
                       ],
                       "status": "expected"
@@ -281,7 +250,7 @@
           "column": 6,
           "specs": [
             {
-              "title": "Home page",
+              "title": " verify Home page",
               "ok": true,
               "tags": [],
               "tests": [
@@ -293,41 +262,76 @@
                   "projectName": "Home Tests",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5576,
+                      "duration": 5155,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "FE favCount:  [\n  \u001b[32m' 991'\u001b[39m, \u001b[32m' 409'\u001b[39m,\n  \u001b[32m' 203'\u001b[39m, \u001b[32m' 85'\u001b[39m,\n  \u001b[32m' 91'\u001b[39m,  \u001b[32m' 65'\u001b[39m,\n  \u001b[32m' 61'\u001b[39m,  \u001b[32m' 59'\u001b[39m,\n  \u001b[32m' 60'\u001b[39m,  \u001b[32m' 65'\u001b[39m\n]\n"
-                        },
-                        {
-                          "text": "FE count:  [\n  \u001b[33m991\u001b[39m, \u001b[33m409\u001b[39m, \u001b[33m203\u001b[39m, \u001b[33m85\u001b[39m, \u001b[33m91\u001b[39m,\n   \u001b[33m65\u001b[39m,  \u001b[33m61\u001b[39m,  \u001b[33m59\u001b[39m, \u001b[33m60\u001b[39m, \u001b[33m65\u001b[39m\n]\n"
-                        },
-                        {
-                          "text": "count of fav [\n  \u001b[33m991\u001b[39m, \u001b[33m409\u001b[39m, \u001b[33m203\u001b[39m, \u001b[33m85\u001b[39m, \u001b[33m91\u001b[39m,\n   \u001b[33m65\u001b[39m,  \u001b[33m61\u001b[39m,  \u001b[33m59\u001b[39m, \u001b[33m60\u001b[39m, \u001b[33m65\u001b[39m\n]\n"
+                          "text": "BE tags from API [\n  \u001b[32m'Test'\u001b[39m,\n  \u001b[32m'Git'\u001b[39m,\n  \u001b[32m'YouTube'\u001b[39m,\n  \u001b[32m'Blog'\u001b[39m,\n  \u001b[32m'Zoom'\u001b[39m,\n  \u001b[32m'GitHub'\u001b[39m,\n  \u001b[32m'Bondar Academy'\u001b[39m,\n  \u001b[32m'Exam'\u001b[39m,\n  \u001b[32m'Enroll'\u001b[39m,\n  \u001b[32m'Community'\u001b[39m\n]\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-08T18:22:59.252Z",
+                      "startTime": "2025-12-09T17:18:08.673Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/home-Home-Home-page-Home-Tests/trace.zip"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "d318381359a9b96acb1e-cd781d0ed49c1dbc782a",
+              "id": "d318381359a9b96acb1e-ccb214ba7e15d2624565",
               "file": "home.spec.ts",
-              "line": 16,
+              "line": 20,
+              "column": 9
+            },
+            {
+              "title": "Verify Tag Favourite count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Home Tests",
+                  "projectName": "Home Tests",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6576,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "feFavCounts [\n  \u001b[32m' 992'\u001b[39m, \u001b[32m' 409'\u001b[39m,\n  \u001b[32m' 203'\u001b[39m, \u001b[32m' 85'\u001b[39m,\n  \u001b[32m' 91'\u001b[39m,  \u001b[32m' 65'\u001b[39m,\n  \u001b[32m' 61'\u001b[39m,  \u001b[32m' 59'\u001b[39m,\n  \u001b[32m' 60'\u001b[39m,  \u001b[32m' 65'\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "fecount  [\n  \u001b[33m992\u001b[39m, \u001b[33m409\u001b[39m, \u001b[33m203\u001b[39m, \u001b[33m85\u001b[39m, \u001b[33m91\u001b[39m,\n   \u001b[33m65\u001b[39m,  \u001b[33m61\u001b[39m,  \u001b[33m59\u001b[39m, \u001b[33m60\u001b[39m, \u001b[33m65\u001b[39m\n]\n"
+                        },
+                        {
+                          "text": "debugger token issue eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozMjkxNH0sImlhdCI6MTc2NTMwMDY4OSwiZXhwIjoxNzcwNDg0Njg5fQ.dt6M8LKz4hDf1O1SLETqxmwhRSuSLR1DR78E-qQ5Hqs\n"
+                        },
+                        {
+                          "text": "beFavCounts [\n  \u001b[33m992\u001b[39m, \u001b[33m409\u001b[39m, \u001b[33m203\u001b[39m, \u001b[33m85\u001b[39m, \u001b[33m91\u001b[39m,\n   \u001b[33m65\u001b[39m,  \u001b[33m61\u001b[39m,  \u001b[33m59\u001b[39m, \u001b[33m60\u001b[39m, \u001b[33m65\u001b[39m\n]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-09T17:18:08.672Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-5ba209d9f9be15f8bbca",
+              "file": "home.spec.ts",
+              "line": 26,
               "column": 9
             }
           ]
@@ -337,9 +341,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-08T18:22:44.208Z",
-    "duration": 20734.863999999943,
-    "expected": 4,
+    "startTime": "2025-12-09T17:17:53.468Z",
+    "duration": 22758.528000000002,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

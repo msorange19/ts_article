@@ -35,14 +35,15 @@ export async function tagFinder(request) {
 
     }
     const tagValue = await response.json();
+    console.log('BE tags from API',tagValue.tags);
     return tagValue.tags;
 }
 
 
 export async function favCount(request) {
+    console.log('debugger token issue',token);
 
     const response = await request.get(`${testData.base_url}/articles`, {
-
         headers: {
             Authorization: `Bearer ${token}`,
         }
@@ -52,6 +53,5 @@ export async function favCount(request) {
 
     }
     const favValue = await response.json();
-    console.log('count of fav',favValue.articles.map(a => a.favoritesCount));
     return favValue.articles.map(a => a.favoritesCount)
 }

@@ -1,4 +1,4 @@
-import {Page, Locator} from "@playwright/test";
+import {Page, Locator, expect} from "@playwright/test";
 
 export class HomePage {
     readonly page: Page;
@@ -23,7 +23,8 @@ export class HomePage {
     }
 
     async verifyFavCount(): Promise<string[]> {
-       // await this.favCount.waitFor({state: "visible"});
+        await this.favCount.first().waitFor({state: "visible"});
+
         return await this.favCount.allInnerTexts();
     }
 
