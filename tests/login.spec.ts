@@ -80,8 +80,7 @@ test.describe("loginPage validation", () => {
                             `.nav-link[href="/profile/${apiUser.username}"]`
                         );
                         expect(uiUsername?.trim()).toBe(apiUser.username);
-                        const tag = await tagFinder(request);
-                        console.log(tag);
+
                         updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Pass");
                     } catch (err) {
                         updateCsv(csvPath, record["Test_ID"], record["Scenario"], record["Test_Name"], "Fail");

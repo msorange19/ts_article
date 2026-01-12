@@ -35,13 +35,13 @@ export async function tagFinder(request) {
 
     }
     const tagValue = await response.json();
-    console.log('BE tags from API',tagValue.tags);
+    //console.log('BE tags from API', tagValue.tags);
     return tagValue.tags;
 }
 
 
 export async function favCount(request) {
-    console.log('debugger token issue',token);
+    console.log('debugger token issue', token);
 
     const response = await request.get(`${testData.base_url}/articles`, {
         headers: {
@@ -52,6 +52,6 @@ export async function favCount(request) {
         throw new Error(`favourite count failed: ${response.status()}`);
 
     }
-    const favValue = await response.json();
-    return favValue.articles.map(a => a.favoritesCount)
+    const articlesData = await response.json();
+    return articlesData.articles;
 }

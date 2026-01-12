@@ -13,7 +13,6 @@ test.describe("Home", () => {
         await getUserFromApi(request);   // only once per file
     });
     test.beforeEach(async ({homePage}) => {
-      //  await getUserFromApi(request);
         await homePage.navigateToHomePage();
     });
     // @ts-ignore
@@ -26,10 +25,11 @@ test.describe("Home", () => {
     test("Verify Tag Favourite count", async ({homePage,request,page}) => {
         const feFavCounts = await homePage.verifyFavCount();
         console.log('feFavCounts',feFavCounts);
+
         const feCount = feFavCounts.map(c => Number(c.trim()));
         console.log('fecount ', feCount);
         const beFavCounts = await favCount(request);
-        console.log('beFavCounts',beFavCounts);
-        expect(feCount).toEqual(beFavCounts);
+        console.log('beFavCounts',beFavCounts.map((a: { favoritesCount: any; }) => a.favoritesCount));
+        expect(feCount).toEqual(beFavCounts.map((a: { favoritesCount: any; }) => a.favoritesCount));
     })
 })

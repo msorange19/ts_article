@@ -7,31 +7,12 @@
     <list default="true" id="11205429-2c93-442e-a13c-ae1bf5f53323" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apicall/apicallback.js" beforeDir="false" afterPath="$PROJECT_DIR$/apicall/apicallback.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/HomePage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/HomePage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/data/4914014ddedd6b915d0fe7d0a7114a4533692c81.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/data/79f03fcb80f26093691dda35677d1df7973be53b.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/data/dcc09cd91e48fd4fe3b178fd7efc9167a4ec0e6b.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/data/f2e40374d3c7298688803628a6d5a8b09e094d4d.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/results/html-report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/html-report/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/assets/codeMirrorModule-3kZ8GVgK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/assets/defaultSettingsView-Ds-bson8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/codeMirrorModule.C3UTv-Ge.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/codicon.DCmgc-ay.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/defaultSettingsView.NYBT19Ch.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/index.CFOW-Ezb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/index.CG3BNeDq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/playwright-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/snapshot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/sw.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/uiMode.BatfzHMG.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/uiMode.BijnIl3L.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/uiMode.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/html-report/trace/xtermModule.Beg8tuEN.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/results/test-results.json" beforeDir="false" afterPath="$PROJECT_DIR$/results/test-results.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/home.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/home.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/login.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +34,18 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="30fcaT9AhO24jRXTK2LwzeOmRq8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.localhost:9323.executor&quot;: &quot;Debug&quot;,
     &quot;Playwright.loginPage validation.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;k6.free24.notification.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/muhaiminulislam/WebstormProjects/ts_article/config&quot;,
@@ -84,7 +67,7 @@
       <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.localhost:9323">
     <configuration name="loginPage validation" type="JavaScriptTestRunnerPlaywright" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <playwright-package value="$PROJECT_DIR$/node_modules/@playwright/test" />
@@ -95,6 +78,9 @@
       <test-names>
         <test-name value="loginPage validation" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="localhost:9323" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:9323">
       <method v="2" />
     </configuration>
     <configuration default="true" type="K6ConfigurationType" factoryName="k6" show_console_on_std_err="false" show_console_on_std_out="false">
@@ -146,6 +132,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.localhost:9323" />
         <item itemvalue="Playwright.loginPage validation" />
       </list>
     </recent_temporary>
@@ -153,7 +140,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26574.96" />
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.332" />
       </set>
     </attachedChunks>
   </component>
@@ -192,7 +179,15 @@
       <workItem from="1764176271561" duration="1202000" />
       <workItem from="1765128109350" duration="3065000" />
       <workItem from="1765209104573" duration="7553000" />
-      <workItem from="1765296926924" duration="3734000" />
+      <workItem from="1765296926924" duration="7124000" />
+      <workItem from="1765518328956" duration="951000" />
+      <workItem from="1765519521897" duration="848000" />
+      <workItem from="1765903683413" duration="1713000" />
+      <workItem from="1766242483634" duration="3223000" />
+      <workItem from="1767374179157" duration="87000" />
+      <workItem from="1767376519810" duration="758000" />
+      <workItem from="1767713757526" duration="4375000" />
+      <workItem from="1768241092234" duration="546000" />
     </task>
     <servers />
   </component>
@@ -214,7 +209,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/tests/home.spec.ts</url>
-          <line>19</line>
+          <line>18</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

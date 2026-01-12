@@ -20,18 +20,18 @@ export default defineConfig({
   projects: [
     {
       name: 'Auth',
-      testMatch: /.*login\.spec\.ts/, // login tests first
+      testMatch: /.*login\.spec\.ts/,
       use: {
         storageState: undefined,
       },
     },
     {
       name: 'Home Tests',
-      testMatch: /.*home\.spec\.ts/, // depends on Auth
+      testMatch: /.*home\.spec\.ts/,
       use: {
         storageState: 'state.json',
       },
-      dependencies: ['Auth'], // 👈 keep dependency order
+      dependencies: ['Auth'],
     }
   ],
 });
