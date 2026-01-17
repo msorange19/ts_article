@@ -32,6 +32,14 @@ export default defineConfig({
         storageState: 'state.json',
       },
       dependencies: ['Auth'],
+    },
+    {
+      name: 'Article Tests',
+      testMatch: /.*article\.spec\.ts/,
+      use: {
+        storageState: 'state.json',
+      },
+      dependencies: ['Auth'],
     }
   ],
 });

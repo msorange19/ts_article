@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -39,7 +39,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 3
         },
         "id": "Auth",
         "name": "Auth",
@@ -55,7 +55,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 3
         },
         "id": "Home Tests",
         "name": "Home Tests",
@@ -63,6 +63,22 @@
         "testIgnore": [],
         "testMatch": [
           "/.*home\\.spec\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "Article Tests",
+        "name": "Article Tests",
+        "testDir": "/Users/muhaiminulislam/WebstormProjects/ts_article/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*article\\.spec\\.ts/"
         ],
         "timeout": 30000
       }
@@ -111,14 +127,20 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4350,
+                          "duration": 3945,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-01-06T18:23:47.967Z",
+                          "startTime": "2026-01-17T17:45:13.773Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/login-loginPage-validation-Invalid-Username-0-Test-login-01-Auth/trace.zip"
+                            }
+                          ]
                         }
                       ],
                       "status": "expected"
@@ -153,7 +175,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3985,
+                          "duration": 4516,
                           "errors": [],
                           "stdout": [
                             {
@@ -165,9 +187,15 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-01-06T18:23:52.564Z",
+                          "startTime": "2026-01-17T17:45:17.809Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/login-loginPage-validation-Invalid-Password-0-Test-login-02-Auth/trace.zip"
+                            }
+                          ]
                         }
                       ],
                       "status": "expected"
@@ -202,7 +230,7 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4765,
+                          "duration": 4332,
                           "errors": [],
                           "stdout": [
                             {
@@ -211,9 +239,15 @@
                           ],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-01-06T18:23:56.553Z",
+                          "startTime": "2026-01-17T17:45:22.401Z",
                           "annotations": [],
-                          "attachments": []
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/login-loginPage-validation-337ff-3-valid-email-and-password--Auth/trace.zip"
+                            }
+                          ]
                         }
                       ],
                       "status": "expected"
@@ -259,14 +293,20 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4900,
+                      "duration": 5041,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-06T18:24:01.596Z",
+                      "startTime": "2026-01-17T17:45:27.054Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/home-Home-verify-Home-page-Home-Tests/trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -293,27 +333,33 @@
                       "workerIndex": 2,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5903,
+                      "duration": 5162,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "feFavCounts [\n  \u001b[32m' 1032'\u001b[39m, \u001b[32m' 419'\u001b[39m,\n  \u001b[32m' 207'\u001b[39m,  \u001b[32m' 88'\u001b[39m,\n  \u001b[32m' 93'\u001b[39m,   \u001b[32m' 70'\u001b[39m,\n  \u001b[32m' 64'\u001b[39m,   \u001b[32m' 63'\u001b[39m,\n  \u001b[32m' 64'\u001b[39m,   \u001b[32m' 66'\u001b[39m\n]\n"
+                          "text": "feFavCounts [\n  \u001b[32m' 1125'\u001b[39m, \u001b[32m' 447'\u001b[39m,\n  \u001b[32m' 219'\u001b[39m,  \u001b[32m' 102'\u001b[39m,\n  \u001b[32m' 102'\u001b[39m,  \u001b[32m' 73'\u001b[39m,\n  \u001b[32m' 69'\u001b[39m,   \u001b[32m' 66'\u001b[39m,\n  \u001b[32m' 66'\u001b[39m,   \u001b[32m' 71'\u001b[39m\n]\n"
                         },
                         {
-                          "text": "fecount  [\n  \u001b[33m1032\u001b[39m, \u001b[33m419\u001b[39m, \u001b[33m207\u001b[39m, \u001b[33m88\u001b[39m,\n    \u001b[33m93\u001b[39m,  \u001b[33m70\u001b[39m,  \u001b[33m64\u001b[39m, \u001b[33m63\u001b[39m,\n    \u001b[33m64\u001b[39m,  \u001b[33m66\u001b[39m\n]\n"
+                          "text": "fecount  [\n  \u001b[33m1125\u001b[39m, \u001b[33m447\u001b[39m, \u001b[33m219\u001b[39m, \u001b[33m102\u001b[39m,\n   \u001b[33m102\u001b[39m,  \u001b[33m73\u001b[39m,  \u001b[33m69\u001b[39m,  \u001b[33m66\u001b[39m,\n    \u001b[33m66\u001b[39m,  \u001b[33m71\u001b[39m\n]\n"
                         },
                         {
-                          "text": "debugger token issue eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozMjkxNH0sImlhdCI6MTc2NzcyMzg0MiwiZXhwIjoxNzcyOTA3ODQyfQ.zQRk1RQnMGa_asZQXxhwBNvUPlknaXw6Hv1tZ7QlamI\n"
+                          "text": "debugger token issue eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozMjkxNH0sImlhdCI6MTc2ODY3MTkyNywiZXhwIjoxNzczODU1OTI3fQ.AtogtT6DcXxIqL1sqQnlHHSOxveavUtnH6eleNRqNuQ\n"
                         },
                         {
-                          "text": "beFavCounts [\n  \u001b[33m1032\u001b[39m, \u001b[33m419\u001b[39m, \u001b[33m207\u001b[39m, \u001b[33m88\u001b[39m,\n    \u001b[33m93\u001b[39m,  \u001b[33m70\u001b[39m,  \u001b[33m64\u001b[39m, \u001b[33m63\u001b[39m,\n    \u001b[33m64\u001b[39m,  \u001b[33m66\u001b[39m\n]\n"
+                          "text": "beFavCounts [\n  \u001b[33m1125\u001b[39m, \u001b[33m447\u001b[39m, \u001b[33m219\u001b[39m, \u001b[33m102\u001b[39m,\n   \u001b[33m102\u001b[39m,  \u001b[33m73\u001b[39m,  \u001b[33m69\u001b[39m,  \u001b[33m66\u001b[39m,\n    \u001b[33m66\u001b[39m,  \u001b[33m71\u001b[39m\n]\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-06T18:24:01.598Z",
+                      "startTime": "2026-01-17T17:45:27.058Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/home-Home-Verify-Tag-Favourite-count-Home-Tests/trace.zip"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
@@ -327,13 +373,70 @@
           ]
         }
       ]
+    },
+    {
+      "title": "article.spec.ts",
+      "file": "article.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "article",
+          "file": "article.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Article",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Article Tests",
+                  "projectName": "Article Tests",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3392,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-17T17:45:27.050Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/muhaiminulislam/WebstormProjects/ts_article/test-results/article-article-Article-Article-Tests/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "36943161b78213d9758d-095b462768832c2051dc",
+              "file": "article.spec.ts",
+              "line": 12,
+              "column": 9
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-06T18:23:47.720Z",
-    "duration": 20682.199,
-    "expected": 5,
+    "startTime": "2026-01-17T17:45:13.286Z",
+    "duration": 19990.834,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
